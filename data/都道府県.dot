@@ -4,63 +4,63 @@ digraph fdp {
             01->02
             02->03
             02->05
-            03->04
-            03->05
+            04->03
+            05->03
             04->05
             04->06
             04->07
-            05->06
-            06->07
-            06->15
-            07->08
+            06->05
+            07->06
+            15->06
+            08->07
             07->09
-            07->10
-            07->15
+            10->07
+            15->07
             08->09
-            08->11
-            08->12
-            09->10
-            09->11
-            10->11
+            11->08
+            12->08
+            10->09
+            11->09
+            11->10
             10->15
             10->20
-            11->12
-            11->13
+            12->11
+            13->11
             11->19
             11->20
-            12->13
-            12->14
+            13->12
+            14->12
             13->14
             13->19
             14->19
             14->22
             15->16
             15->20
-            16->17
+            17->16
             16->20
-            16->21
-            17->18
-            17->21
+            21->16
+            18->17
+            21->17
             18->21
             18->25
-            18->26
+            26->18
             19->20
             19->22
-            20->21
+            21->20
             20->22
-            20->23
-            21->23
+            23->20
+            23->21
             21->24
             21->25
-            22->23
+            23->22
             23->24
-            24->25
-            24->26
-            24->29
-            24->30
-            25->26
-            26->27
-            26->28
+            25->24
+            26->24
+            29->24
+            30->24
+            26->25
+            27->26
+            28->26
             26->29
             27->28
             27->29
@@ -69,118 +69,118 @@ digraph fdp {
             28->33
             28->36
             29->30
-            31->32
-            31->33
-            31->34
-            32->34
-            32->35
-            33->34
+            32->31
+            33->31
+            34->31
+            34->32
+            35->32
+            34->33
             33->37
             34->35
             34->38
-            35->40
-            36->37
-            36->38
-            36->39
-            37->38
-            38->39
+            40->35
+            37->36
+            38->36
+            39->36
+            38->37
+            39->38
             40->41
             40->43
             40->44
-            41->42
-            43->44
+            42->41
+            44->43
             43->45
             43->46
             44->45
             45->46
-            46->47
+            47->46
         }
 
         subgraph cluster_hokkaido {
             label = "北海道"
             color = "black"
-            01	[label = "	北海道	"]
+            01  [label = "	北海道	回復率:72.7%	",fillcolor =	"#63BE7B"]
         }
 
         subgraph cluster_tohoku {
             label = "東北"
-            02	[label = "	青森県	"]
-            03	[label = "	岩手県	"]
-            04	[label = "	宮城県	"]
-            05	[label = "	秋田県	"]
-            06	[label = "	山形県	"]
-            07	[label = "	福島県	"]
+            02	[label = "	青森県	回復率:.0%", fillcolor =	"#F8696B"]
+            03	[label = "	岩手県	回復率:100%",fillcolor =	"#FFFFFF"]
+            04	[label = "	宮城県	回復率:3.8%	",fillcolor =	"#F98B71"]
+            05	[label = "	秋田県	回復率:18.2%	",fillcolor =	"#F6E984"]
+            06	[label = "	山形県	回復率:.0%	",fillcolor =	"#F8696B"]
+            07	[label = "	福島県	回復率:6.3%	",fillcolor =	"#FAA075"]
         }            
             
         subgraph cluster_kanto {
             label = "関東"
-            08	[label = "	茨城県	"]
-            09	[label = "	栃木県	"]
-            10	[label = "	群馬県	"]
-            11	[label = "	埼玉県	"]
-            12	[label = "	千葉県	"]
-            13	[label = "	東京都	"]
-            14	[label = "	神奈川県	"]
+            08	[label = "	茨城県	回復率:1.4%	",fillcolor =	"#F8756D"]
+            09	[label = "	栃木県	回復率:21.4%	",fillcolor =	"#EDE683"]
+            10	[label = "	群馬県	回復率:3.8%	",fillcolor =	"#F98B71"]
+            11	[label = "	埼玉県	回復率:11.8%	",fillcolor =	"#FDD17F"]
+            12	[label = "	千葉県	回復率:12.6%	",fillcolor =	"#FED980"]
+            13	[label = "	東京都	回復率:5.2%	",fillcolor =	"#FA9673"]
+            14	[label = "	神奈川県	回復率:12.3%	",fillcolor =	"#FDD57F"]
         }
         
         subgraph cluster_koshinetsu {
             label = "甲信越"
-            15	[label = "	新潟県	"]
-            16	[label = "	富山県	"]
-            17	[label = "	石川県	"]
-            18	[label = "	福井県	"]
-            19	[label = "	山梨県	"]
-            20	[label = "	長野県	"]
+            15	[label = "	新潟県	回復率:34.4%	",fillcolor =	"#CADC81"]
+            16	[label = "	富山県	回復率:.0%	",fillcolor =	"#F8696B"]
+            17	[label = "	石川県	回復率:11.1%	",fillcolor =	"#FDCB7D"]
+            18	[label = "	福井県	回復率:1.8%	",fillcolor =	"#F8786D"]
+            19	[label = "	山梨県	回復率:14.3%	",fillcolor =	"#FEE783"]
+            20	[label = "	長野県	回復率:28.6%	",fillcolor =	"#DAE182"]
         }
 
         subgraph cluster_tokai {
             label = "東海"
-            21	[label = "	岐阜県	"]
-            22	[label = "	静岡県	"]
-            23	[label = "	愛知県	"]
-            24	[label = "	三重県	"]
+            21	[label = "	岐阜県	回復率:3.9%	",fillcolor =	"#F98B71"]
+            22	[label = "	静岡県	回復率:30.0%	",fillcolor =	"#D6E082"]
+            23	[label = "	愛知県	回復率:21.9%	",fillcolor =	"#ECE683"]
+            24	[label = "	三重県	回復率:30.8%	",fillcolor =	"#D4DF82"]
         }
             
         subgraph cluster_kinki {
             label = "近畿"
-            25	[label = "	滋賀県	"]
-            26	[label = "	京都府	"]
-            27	[label = "	大阪府	"]
-            28	[label = "	兵庫県	"]
-            29	[label = "	奈良県	"]
-            30	[label = "	和歌山県	"]
+            25	[label = "	滋賀県	回復率:16.7%	",fillcolor =	"#FAEA84"]
+            26	[label = "	京都府	回復率:15.1%	",fillcolor =	"#FEEB84"]
+            27	[label = "	大阪府	回復率:19.3%	",fillcolor =	"#F3E884"]
+            28	[label = "	兵庫県	回復率:26.4%	",fillcolor =	"#E0E283"]
+            29	[label = "	奈良県	回復率:30.8%	",fillcolor =	"#D4DF82"]
+            30	[label = "	和歌山県	回復率:55.6%	",fillcolor =	"#92CC7E"]
         }
 
         subgraph cluster_chugoku {
             label = "中国"
-            31	[label = "	鳥取県	"]
-            32	[label = "	島根県	"]
-            33	[label = "	岡山県	"]
-            34	[label = "	広島県	"]
-            35	[label = "	山口県	"]
+            31	[label = "	鳥取県	回復率:100%	",fillcolor =	"#FFFFFF"]
+            32	[label = "	島根県	回復率:100%	",fillcolor =	"#FFFFFF"]
+            33	[label = "	岡山県	回復率:.0%	",fillcolor =	"#F8696B"]
+            34	[label = "	広島県	回復率:6.3%	",fillcolor =	"#FAA075"]
+            35	[label = "	山口県	回復率:25.0%	",fillcolor =	"#E4E383"]
         }
         
         subgraph cluster_shikoku {
             label = "四国"
-            36	[label = "	徳島県	"]
-            37	[label = "	香川県	"]
-            38	[label = "	愛媛県	"]
-            39	[label = "	高知県	"]
+            36	[label = "	徳島県	回復率:33.3%	",fillcolor =	"#CDDD82"]
+            37	[label = "	香川県	回復率:.0%	",fillcolor =	"#F8696B"]
+            38	[label = "	愛媛県	回復率:28.6%	",fillcolor =	"#DAE182"]
+            39	[label = "	高知県	回復率:35.3%	",fillcolor =	"#C8DB81"]
         }
 
         subgraph cluster_kyushu {
             label = "九州"
-            40	[label = "	福岡県	"]
-            41	[label = "	佐賀県	"]
-            42	[label = "	長崎県	"]
-            43	[label = "	熊本県	"]
-            44	[label = "	大分県	"]
-            45	[label = "	宮崎県	"]
-            46	[label = "	鹿児島県	"]
+            40	[label = "	福岡県	回復率:5.3%	",fillcolor =	"#FA9874"]
+            41	[label = "	佐賀県	回復率:12.5%	",fillcolor =	"#FDD780"]
+            42	[label = "	長崎県	回復率:22.2%	",fillcolor =	"#EBE683"]
+            43	[label = "	熊本県	回復率:15.0%	",fillcolor =	"#FFEB84"]
+            44	[label = "	大分県	回復率:25.0%	",fillcolor =	"#E4E383"]
+            45	[label = "	宮崎県	回復率:42.9%	",fillcolor =	"#B4D680"]
+            46	[label = "	鹿児島県	回復率:.0%	",fillcolor =	"#F8696B"]
         }
             
         subgraph cluster_ryukyu {
             label = "琉球"
-            47	[label = "	沖縄県	"]
+            47	[label = "	沖縄県	回復率:13.3%	",fillcolor =	"#FEDF81"]
         }
 }
